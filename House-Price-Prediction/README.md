@@ -1,8 +1,8 @@
 # Ames House Price Prediction (Deep Learning Approach)
 
-!\[Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
-!\[PyTorch](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)
-!\[Kaggle](https://img.shields.io/badge/Kaggle-Top20%25-00aff0.svg)
+![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
+![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)
+![Kaggle](https://img.shields.io/badge/Kaggle-Top20%25-00aff0.svg)
 
 This repository provides a robust deep learning pipeline for the [Kaggle House Prices competition](https://www.kaggle.com/c/house-prices-advanced-regression-techniques). By implementing a Multi-Layer Perceptron (MLP) with optimized data pre-processing, this project achieved a **Top 20%** standing.
 
@@ -21,14 +21,15 @@ As a Software Engineering student, I focused not only on model accuracy but also
 3. **Feature Pipeline**:
 
    * Engineered physical features (`TotalSF`, `HouseAge`) before normalization.
-   * Strict feature alignment: Concatenated train/test sets before `get\\\_dummies` to prevent column mismatch.
+   * Strict feature alignment: Concatenated train/test sets before `get_dummies` to prevent column mismatch.
    * Boolean-to-Float casting to ensure PyTorch tensor compatibility.
 
 ## 🏗️ Project Structure
 
 ```text
 .
-├── main.ipynb          # Core logic (Preprocessing, Training, Prediction)
+├── House-Price-Prediction.ipynb
+│                       # Core logic (Preprocessing, Training, Prediction)
 ├── submission.csv      # Final Kaggle-ready output
 ├── requirements.txt    # Environment dependencies
 └── README.md           # Documentation
@@ -46,7 +47,7 @@ pip install -r requirements.txt
 
 ### 2. Usage
 
-Open `main.ipynb` in Jupyter Lab/Notebook and run all cells. The script will:
+Open `House-Price-Prediction.ipynb` in Jupyter Lab/Notebook and run all cells. The notebook will:
 * **Data Management**: Download or load the dataset.
 * **Feature Engineering**: Perform automated feature engineering and normalization.
 * **Validation**: Execute 5-Fold Cross-Validation.
